@@ -1,0 +1,16 @@
+package com.pivotal.fieldengineering.sampledata;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = EurekaServiceRegApplication.class)
+public class EurekaServiceRegApplicationTests {
+
+	@Test
+	public void contextLoads() {
+	}
+
+}
