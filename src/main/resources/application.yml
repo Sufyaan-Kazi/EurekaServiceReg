@@ -9,8 +9,13 @@ eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eurekaservicereg-peer1.emea.fe.gopivotal.com/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
   
 logging:
   level:
